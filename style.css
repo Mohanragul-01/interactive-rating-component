@@ -1,0 +1,134 @@
+/* VARIABLES */
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Star: hsl(213, 20%, 22%);
+}
+
+/* BODY-STYLES */
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+body 
+{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hidden
+{
+    display: none;
+}
+
+/* CARD-STYLES */
+.card
+{
+    background-color: var(--Dark-Blue);
+    width: 350px;
+    border-radius: 1rem;
+}
+.card .container
+{
+    padding: 2rem;
+}
+.title
+{
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.descript
+{
+    font-size: 14px;
+    color: var(--Medium-Grey);
+    margin-bottom: 1rem;
+}
+
+/* RATINGS-STYLES */
+.rating-section img
+{
+    background-color: var(--Star);
+    width: auto;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.btns .btn
+{
+    background-color: var(--Star);
+    width: 40px;
+    height: 40px;
+    color: var(--Medium-Grey);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btns .btn:hover
+{
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+}
+.btn-submit
+{
+    background-color: var(--Orange);
+    font-weight: 700;
+    width: 100%;
+    padding: .75rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-submit:hover
+{
+    background-color: var(--White);
+}
+
+/* THANK-YOU-STYLES */
+.card .container .thank-section
+{
+    text-align: center;
+}
+.result
+{
+    background-color: var(--Star);
+    color: var(--Orange);
+    width: fit-content;
+    margin: 1rem auto;  
+    border-radius: 2rem;
+    font-size: 14px;
+    padding: .75rem 1.5rem;
+}
+
+/* CLASS STYLES */
+.clicked
+{
+    background-color: var(--White) !important;
+    color: var(--Very-Dark-Blue) !important;
+}
